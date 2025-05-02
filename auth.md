@@ -122,7 +122,7 @@ Gate::before(function (?User $user, $ability) {
 
 Laravel's authentication system fires various events during the authentication process, allowing you to hook into these events and perform additional actions or custom logic.
 
-For example, you might want to log users Login. 
+For example, you might want to log users Login.
 You can achieve this by listening to the `Illuminate\Auth\Events\Login` event.
 
 To implement it:

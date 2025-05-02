@@ -2199,14 +2199,14 @@ class CategoryController extends Controller
     {
         // instead of
         $category = Category::where('name', $request->name)->first();
-        
+
         if (!$category) {
             $category = Category::create([
                 'name' => $request->name,
                 'slug' => Str::slug($request->name),
             ]);
         }
-        
+
         // you can use
         $category = Category::firstOrCreate([
             'name' => $request->name,

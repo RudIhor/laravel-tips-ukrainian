@@ -112,7 +112,7 @@ class TerminatingMiddleware
     {
         return $next($request);
     }
- 
+
     public function terminate($request, $response)
     {
         // ...
@@ -1522,4 +1522,3 @@ If you ever need to bypass database when a job fails, you can do one of the belo
 Why you would want this? For applications where you do not need to store failed jobs and they needs to have very high TPS, skipping database can be very favourable as we are not hitting database, saving times & prevent database going down.
 
 Tip given by [@a-h-abid](https://github.com/a-h-abid)
-

@@ -70,10 +70,10 @@ If you want to check what migrations are executed or not yet, no need to look at
 Example result:
 
 ```
-Migration name .......................................................................... Batch / Status  
-2014_10_12_000000_create_users_table ........................................................... [1] Ran  
-2014_10_12_100000_create_password_resets_table ................................................. [1] Ran  
-2019_08_19_000000_create_failed_jobs_table ..................................................... [1] Ran    
+Migration name .......................................................................... Batch / Status
+2014_10_12_000000_create_users_table ........................................................... [1] Ran
+2014_10_12_100000_create_password_resets_table ................................................. [1] Ran
+2019_08_19_000000_create_failed_jobs_table ..................................................... [1] Ran
 ```
 
 ### Create Migration with Spaces
@@ -302,4 +302,3 @@ Schema::create('posts', function (Blueprint $table) {
 ```
 
 Tip given by [@iamgurmandeep](https://twitter.com/iamgurmandeep/status/1517152425748148225)
-
