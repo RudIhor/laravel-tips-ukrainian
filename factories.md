@@ -141,4 +141,3 @@ class EventSeeder extends Seeder
 ```
 
 Tip given by [@justsanjit](https://twitter.com/justsanjit/status/1514428294418079746)
-

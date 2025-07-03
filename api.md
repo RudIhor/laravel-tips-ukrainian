@@ -238,7 +238,7 @@ public function handle($request, Closure $next)
 Second, register the created middleware in app/Http/Kernel.php file:
 
 ```php
-protected $middlewareGroups = [        
+protected $middlewareGroups = [
     'api' => [
         \App\Http\Middleware\ForceJsonResponse::class,
     ],
@@ -255,12 +255,12 @@ Tip given by [Feras Elsharif](https://github.com/ferasbbm)
 
 If you are working on a project that may have multi-release in the future or your endpoints have a breaking change like a change in the format of the response data, and you want to ensure that the API version remains functional when changes are made to the code.
 
-#### Change The Default Route Files 
+#### Change The Default Route Files
 The first step is to change the route map in the `App\Providers\RouteServiceProvider` file, so let's get started:
 
 #### Laravel 8 and above:
 
-Add a 'ApiNamespace' property 
+Add a 'ApiNamespace' property
 
 ```php
 /**
@@ -279,7 +279,7 @@ $this->routes(function () {
         ->namespace($this->ApiNamespace.'\\V1')
         ->group(base_path('routes/API/v1.php'));
         }
-    
+
     //for v2
      Route::prefix('api/v2')
             ->middleware('api')
@@ -304,7 +304,7 @@ protected string $ApiNamespace = 'App\Http\Controllers\Api';
 Inside the method map, add the following code:
 
 ```php
-// remove this $this->mapApiRoutes(); 
+// remove this $this->mapApiRoutes();
     $this->mapApiV1Routes();
     $this->mapApiV2Routes();
 ```
@@ -345,8 +345,8 @@ Controllers
 ```
 routes
 └── Api
-   │    └── v1.php     
-   │    └── v2.php 
+   │    └── v1.php
+   │    └── v2.php
    └── web.php
 ```
 

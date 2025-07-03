@@ -433,4 +433,3 @@ This is going to be a nice addition that we can use to clean up our Blade views 
 ```
 
 Tip given by [@VijayGoswami](https://vijaygoswami.in)
-

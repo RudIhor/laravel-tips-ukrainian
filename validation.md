@@ -521,4 +521,3 @@ class RegistrationController extends Controller
 ```
 
 Tip given by [@mattkingshott](https://twitter.com/mattkingshott/status/1518590652682063873)
-

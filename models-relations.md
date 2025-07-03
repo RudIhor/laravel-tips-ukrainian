@@ -680,4 +680,3 @@ select * from posts where user_id = ? and (active = 1 or votes >= 100)
 ```
 
 Tip given by [@BonnickJosh](https://twitter.com/BonnickJosh/status/1494779780562096139)
-

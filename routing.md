@@ -674,4 +674,3 @@ Route::controller(UsersController::class)->group(function () {
 ```
 
 Tip given by [@justsanjit](https://twitter.com/justsanjit/status/1514943541612527616)
-

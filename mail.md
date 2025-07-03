@@ -110,4 +110,3 @@ class InvoicePaid extends Notification
 Use the `when` or `unless` methods in you own classes by using the `Illuminate\Support\Traits\Conditionable` trait
 
 Tip given by [@Philo01](https://twitter.com/Philo01/status/1503302749525528582)
-

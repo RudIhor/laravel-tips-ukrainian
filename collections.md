@@ -144,4 +144,3 @@ Collection::times(7, function ($number) {
 ```
 
 Tip given by [@Teacoders](https://twitter.com/Teacoders/status/1509447909602906116)
-
